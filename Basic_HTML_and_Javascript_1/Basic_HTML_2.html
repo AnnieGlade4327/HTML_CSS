@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Basic_Javascript_1.js"></script>
+</head>
+<body>
+	<center>
+	<h1><button onclick="My_First_Function()">
+		Click Here for Itinerary!</button></h1>
+	<h2><button onclick="My_Second_Function()">
+		Click Here for Meal Plan!
+	</button></h2>
+	</center>
+</body>
+<script>
+	function My_First_Function() {
+		var String = "Set your Itinerary!";
+		var result = String.fontcolor("purple");
+		document.getElementById("Ireland").innerHTML = 
+		result;
+		function My_Second_Function() {
+		var String = "Choose Your Meal Plan";
+		var result = String.fontcolor("#FFA07A");
+		document.getElementById("MealPlan").innerHTML = 
+		result;
+		}
+	}
+</script>
+</html>
