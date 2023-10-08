@@ -1,0 +1,1202 @@
+
+Before writing HTML (Hyper Text Markup Language) code, we are going to cover some of the basic terms associated with the language. While some of this has been covered earlier in your training, let’s take a deeper dive!
+
+
+HTML is a computer language that describes the appearance, content, and behavior of web pages. The web page files that are served up by a web server are written in HTML.
+
+
+There are two main concepts in HTML:
+
+
+“Hypertext,” and
+
+“Markup.”
+
+Hypertext is a system for linking electronic documents. In an HTML document, hypertext is words, images, videos, etc. that link to other HTML documents. When a user selects the hypertext, the linked document is retrieved and displayed on the computer screen.
+
+
+Markup is the action of adding instructions to a document to control the format, style, and appearance of the content of the document. This applies to physical printed documents as well as to electronic documents that are displayed on a computer screen.
+
+
+A markup language is a type of programming language that is used to specify markup instructions for the data in a document. In other words, markup instructions aren’t the data in the document; they are data about the data in the document.
+HTML utilizes tags. Tags are how the markup of the content in the HTML document is specified.
+
+
+The basic principle is this: If you put special instructions before and after the content you want to affect, another program can tell the difference between the instruction and the content, and can then present the data in a specified manner.
+
+
+Because of this, tags usually have two parts: an opening tag and a closing tag. The content would go in between these two tags. Opening tags indicate the beginning of a markup instruction and closing tags indicate the end.
+
+
+Opening tags are written as a “less than” angle bracket (<), followed by the markup instruction, and then a “greater than” angle bracket (>).
+You need to specify a closing tag, so the computer program knows when to stop making text bold. That’s where the closing tag comes in. Closing tags use the same instruction as the opening tag, but with a forward slash (/) placed before the instruction (</>).
+
+ex <strong> </strong>
+
+
+
+HTML is a markup language. There are other markup languages.
+
+
+HTML is used to create web pages. A computer programmer uses HTML to put markup instructions before and after the content of a web page.
+
+
+These markup instructions give the computer data about the elements of the document – the text, images, video, etc. When the document is actually displayed on a screen, those markup instructions aren’t displayed on the screen; instead, they are used to control how the actual content of the document is displayed.
+
+HTML utilizes tags. Tags are how the markup of the content in the HTML document is specified.
+
+
+The basic principle is this: If you put special instructions before and after the content you want to affect, another program can tell the difference between the instruction and the content, and can then present the data in a specified manner.
+
+
+Because of this, tags usually have two parts: an opening tag and a closing tag. The content would go in between these two tags. Opening tags indicate the beginning of a markup instruction and closing tags indicate the end.
+
+
+Opening tags are written as a “less than” angle bracket (<), followed by the markup instruction, and then a “greater than” angle bracket (>).
+
+
+HTML is used to instruct browsers on how to present content to the user’s screen. The open and closed tags used in HTML denote document elements. Each element works together to form a web document, and a web browser such as Chrome or Firefox is required to parse and display the HTML as intended by the author.  
+
+
+HTML can be further enhanced when teamed with other web-related languages – most commonly: Cascading Style Sheets (CSS) and JavaScript. HTML builds out the skeleton of the website, while CSS and JavaScript can be used to beautify and modify it.
+
+
+The standards of HTML are governed by The World Wide Web Consortium (W3C), which is a group of individuals and organizations that work together in creating the standards for the world wide web.
+
+The tags and the code written between them is called an “element.” Here is a diagram that shows this:
+<tag name>  contents  </tag name>
+^^opentag  element^^^  closetag^^
+
+The HTML code at the top of most webpages is the <!DOCTYPE html> declaration. This is an instruction to the browser that states the version of HTML being used.
+In VSC
+! + Tab will auto populate the HTML info
+then go below device width
+<meta name = "author" content= "Name Here">
+
+
+HTML5 is the latest version. In the HTML document, the code <!DOCTYPE html> tells the browser that the code that follows is written in HTML5.
+
+
+Please note that in HTML5 there is no need to specify the version number explicitly. Also, the <!DOCTYPE html> declaration is not a tag (note there is no closing tag [</>]) – it is an instruction to the browser as to what version of HTML to use, rather than a tag used to affect content on the web page.
+
+
+There are different doctype declarations for earlier versions of HTML and for other web development languages.
+
+
+You should always include the <!DOCTYPE html> declaration at the top of all HTML code.
+
+The first tag contained in an HTML document is the <html> tag and at the end of the document you end it with the closing html tag </html>. These tags are required to produce a web page – the text and markup tags placed between the <html> and </html> tags form the overall web page.
+The <body> element is used to house all of the content (text, images, links, videos, etc.) in an HTML document. The body of an HTML document is contained within the <body> and </body> tags.
+
+
+The title element is where you write the title of the document (in between the <title> and </title> tags)
+ 
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+     <title> Title </title>
+     <body> body </body>
+     <p> paragraph </p> *could be inside body etc*
+</html>
+
+CLI stands for command-line interface.
+
+
+As a reminder, an interface is a device or program that enables a user to communicate with a computer.
+
+
+The command line is an interface where you can type commands into a computer. The command line allows you to perform many actions, including: moving files, deleting files, copying files, starting computer programs, etc. While these actions are typically done with a mouse, they can also be handled by typing words into a command line.
+
+
+As opposed to GUI (Graphical User Interface; a representation of the various objects in a computer – files, programs, etc. – in a visual form), CLI is where you control a computer and interact with it by simply reading and typing text onto the computer screen.
+
+
+EXAMPLE: If you type: copy schedule.txt “2025/August” “2025/September” into a CLI, you can copy the file “schedule.txt” from a location called “2025/August” to another location called “2025/September.”
+The underscore symbol “_” is a short horizontal line.
+A common practice is to separate HTML files from JavaScript files – meaning, the code exists in different documents (.html docs and .js docs). This allows for a better organization of code.
+
+Occasionally you’ll see file names with underscores in them, like:
+Bird_Picture_1.jpg
+
+It is a common practice of developers to use _ (underscores) and - (dashes) to represent spaces in file names. Why is that? Here are some reasons:
+
+
+In some original command-line interfaces, spaces were represented by underscores or dashes. Some CLIs and operating systems wouldn’t even allow the use of spaces in file names and doing so would cause errors.        .
+
+In URLs, spaces are represented with the characters “%20.” This is because the space character is character number 20 in the ASCII character encoding system. Using underscores or hyphens can result in a cleaner address. For example, learncodinganywhere.com/the-tech-academy is more visually appealing than learncodinganywhere.com/the%20tech%20academy.
+
+And so, some use underscores or hyphens instead of spaces because spaces can occasionally cause issues due to how they affect the appearance of URLs.
+
+
+While underscores or hyphens are not always required, they’ve become common in the tech industry.
+
+
+By default, Windows does not display the extension of files.
+
+
+For example, if you look at your Documents folder, you’ll most likely see file names without the extension displayed.
+Improper file extensions can cause issues when attempting to run code. One of the ways to ensure you have the proper file extension is to ensure that extensions are displayed.
+
+For example, if your file extension view option is off, you may accidentally save a file as: test.html.txt – which won’t run properly in the browser.
+
+
+Therefore, here is your assignment:
+
+
+Turn the view for file name extensions on.
+
+
+For Windows users, this is typically done by opening a folder, clicking View and then clicking the “File name extensions” checkbox.
+
+
+Here is an article that shows several ways to do so for Windows:
+
+
+How to show File Extensions in Windows 10 
+https://www.thewindowsclub.com/show-file-extensions-in-windows
+
+
+Here is an article that shows how to do this for Mac:
+
+
+Show or Hide Filename Extensions on Mac 
+https://www.thewindowsclub.com/show-file-extensions-in-windows
+
+
+Feel free to research online how to do this, if needed.
+
+
+Character encoding is a system where numbers, letters, etc. are represented by codes. The codes used are in a form that computers can easily understand. The system used for each type of code depends on how that code is going to be used.
+
+
+EXAMPLE: The letter “A” could be represented by the code “65.”
+
+
+Usually, the actual codes for a letter, number, etc. are in binary. Every letter or symbol has a unique number so that the computer knows what letter or symbol you mean, and this is called character encoding.
+
+
+EXAMPLE: The letter “B” might have 1000010 as its character encoding.
+In HTML (and all coding) you will be dealing with characters.
+
+
+In the written form of a language, a character is a written symbol that represents one of the various parts of that language – the various letters, punctuation marks and symbols that are used to lay out that language in written form.
+
+
+As an example, the English sentence “Speed limit 65 MPH!” makes use of upper-case letters such as “S” and “M,” lower-case letters such as “p” and “t,” punctuation marks such as “ ” (a space between characters) and “!,” and the numbers “6” and “5.”
+
+
+Character sets are fixed collections of these various symbols, usually containing all needed symbols for a specific language. If we took the English alphabet as an example, it is a character set containing almost 100 symbols. This includes 26 upper-case letters of the English alphabet, 26 lower-case characters of the English alphabet, the numeric digits 0 through 9, and a collection of punctuation marks.
+As computers are often used to represent data in written form, they must be configured to represent the various characters for written languages. Early computers were primarily created by engineers whose primary language was English, so their efforts in this direction concerned the representation of English characters using computers – specifically, representing the nearly 100 characters described earlier.
+
+
+In the 1960s, the ASCII (American Standard Code for Information Interchange) was created in order to standardize a system to represent English characters using computers. It contains 127 symbols, including numbers and letters. ASCII was designed for languages that use the English alphabet only.
+
+
+In simple terms, each character in the ASCII character set has an associated unique number. When that number is given to a device meant to use written characters – such as a monitor or a printer – the computer can look that number up in the ASCII tables, get the specific symbol it represents from that table, and then print or display that character.
+
+
+For example, the ASCII code for an upper case “S” is the decimal number 83, while the code for a lower-case “s” is 115.
+
+In addition to the nearly 100 symbols used to represent the letters, numbers and punctuation of the language, ASCII also includes control characters – symbols that aren’t meant to represent printable characters, but instead represent instructions to control the various pieces of electronic equipment that would use the ASCII characters – printers and monitors, for example. These are instructions such as “backspace” (to delete the character immediately to the left of the current position of the printing mechanism) and “carriage return” (to move down to the next line of printing and return to the far left of the page).
+
+Since computers operate in binary, the characters in character sets must each be translated into binary. This is done through character encoding. This typically goes through this process:
+
+Character (CONVERTED TO →) Hexadecimal (CONVERTED TO →) Binary
+Using the ASCII codes, the earlier sentence “Speed limit 65 MPH!” would be represented in decimal numbers in this manner:
+
+83 112 101 101 100 32 108 105 109 105 116 32 54 53 32 77 80 72 33
+
+Using the ASCII codes, that same sentence would be represented in binary numbers in this manner:
+
+01010011 01110000 01100101 01100101 01100100 00100000 01101100 01101001 01101101 01101001 01110100 00100000 00110110 00110101 00100000 01001101 01010000 01001000 00100001
+
+Those binary numbers are the actual data that would be given to the computer in order to create the sentence “Speed limit 65 MPH!”
+
+ASCII does not contain symbols or characters like: è, ñ, ü, ©, or characters from other languages like Chinese or Arabic.
+
+As there are many different written languages in use on Earth, a system was needed that accommodated more than just the English language.
+
+As a developer, in creating software and web sites, you will utilize various character sets and character encoding, so it is important you understand these subjects and their various types.
+
+Unicode is another standard for representing letters and symbols in computers. It stands for “Unique, Universal, and Uniform character enCoding.”
+
+
+Unicode is intended to represent all languages across the world, not just English. Each letter and symbol of the various languages of the world has a specific number in the Unicode system.
+
+
+This is important because computers are much more useful if they can display data in the language of the user.
+
+
+Developers needed a way to clarify what letters or symbols to use in their programs if the user wanted the data displayed in another language. It was necessary that all computer manufacturers agree on this system so that computers could be used globally.
+
+
+For example, in Unicode the letter “A” could be represented as 0041.
+Whereas the standard ASCII character set can only support 128 characters, Unicode can support about 1,000,000 characters.
+
+
+Another difference between Unicode and ASCII is that ASCII utilizes one byte (8 binary digits) to represent each character. Unicode utilizes between one and four bytes to represent characters.
+Technically, when speaking of character encoding, the numerical value assigned to a specific character or format is called a “code point.”
+
+
+For example: ASCII has 128 code points.
+
+
+In the chart below, you can see some of the code points in the ASCII character set (032-127 – note: the left column is the decimal code point, the middle column is the hexadecimal code point, and the right column is the character): 
+https://techacademystorage.blob.core.windows.net/htmlandcss/ascii.png
+If you look closely at some URLs, you may see the characters “UTF.”
+
+
+“UTF” stands for “Unicode Transformation Format.” UTF is a character encoding format that is able to utilize all of the code points in Unicode.
+
+
+This is needed to allow for the encoding of languages other than English.
+
+
+The most popular type of Unicode encoding is UTF-8. Here, the 8 means that each Unicode character is represented by one or more 8-bit binary numbers (a set of 8 binary digits is called a byte). Other UTF encodings exist, such as UTF-16, where each Unicode character is represented by one or more 16-bit binary numbers.
+
+
+In UTF-8, only one byte is used to represent common English characters. Hebrew, European, and Arabic characters are represented with two bytes. Three bytes are used to represent Chinese, Korean, Japanese, and other Asian characters. There are other Unicode characters that can be represented with four bytes.
+
+
+Another useful aspect of UTF-8 is that it is backwards compatible (able to be used with an older piece of hardware or software without special adaptation or changes) with ASCII.
+
+
+UTF-8 is used in the operating system Linux by default, and is commonly used for the exchange of data on the internet. Around 90% of websites in existence utilize UTF-8.
+
+
+Here is a website that shows the full character list for UTF-8:
+https://www.fileformat.info/info/charset/UTF-8/list.htm
+And so, many websites contain “UTF-8” in the URL which means that was the character encoding used when writing that website. You can specify the character encoding you want used within your HTML code.
+
+UTF-16 is another popular Unicode encoding.
+
+UTF-8 is used far more on the web – UTF-16 is used by less than 0.01% of web pages. The main reason UTF-16 is used less in websites is due to the fact that the official documentation on HTML 5 strongly discourages the use of UTF-16 for websites, mainly because it wasn’t originally created with web use in mind (that was left for UTF-8) and it is considered less secure for online use.
+
+UTF-16 is used by Microsoft Windows and Mac OS X's file systems. It’s also used in the programming language Java.
+UTF-16 is capable of utilizing all 1,112,064 code points of Unicode.
+
+Here is a website that shows the full character list for UTF-16:
+https://www.fileformat.info/info/charset/UTF-16/list.htm
+
+UCS is a standard set of characters defined by the International Organization for Standardization (ISO) – an organization composed of representatives from various standards organizations across the world. The ISO exists to monitor and promote international industrial and commercial standards.
+
+
+Under the umbrella of the UCS, the ISO created the UTF character encoding systems – including UTF-8 and UTF-16.
+
+
+UCS-2 is a character encoding standard where characters are represented by a fixed length of 16 bits (2 bytes). UCS-2 allows for a maximum of 65,536 characters.
+
+
+For example: in UCS-2, an uppercase A is represented by 0041.
+
+
+It should be noted that in 2017 the ISO stated “UCS-2 should now be considered obsolete. It no longer refers to an encoding form in… the Unicode Standard.”
+
+
+UTF-16 is an extension of (improvement upon) UCS-2.
+A character set (called “char set” for short) is a standardized set of characters. Here is part of the character set for ASCII:
+https://techacademystorage.blob.core.windows.net/htmlandcss/char_set.PNG
+An encoding system is a standardized way to translate characters into binary. In the UTF-8 encoding system, the character A is assigned 01000001 in binary, and in UT-16 it is assigned 00000000 01000001.
+
+
+Char sets are transformed into binary by encoding systems.
+
+
+Unicode primarily defines two things:
+
+
+A character set (Unicode includes the characters needed for nearly all of Earth’s languages).
+
+Several encoding systems (as covered earlier, the most popular are UTF-8 and UTF-16).
+Have you ever opened a file and the document was displayed incorrectly?
+
+
+In order to properly display characters when opening a file, a program (like a text editor) must know which encoding system was used.
+
+
+In most browsers and programs, you can choose which encoding system to use.
+
+
+You can also typically specify the encoding type when saving a file.
+
+
+One of the encoding options for Notepad documents is UTF-8. This can be seen in the picture below (look next to “Encoding”):https://techacademystorage.blob.core.windows.net/htmlandcss/code_snippet_utf_8.png
+“Meta” comes from the word “beyond.”
+
+
+Metadata is data that gives data about, or describes, other data. Simply put, metadata means: data about data.
+
+
+In HTML, the <meta> tag is usually used to convey data to browsers and search engines that isn’t displayed to the user.
+
+
+Meta elements can be used to describe pages, provide keywords to help categorize the type of information in the content of the page, note the author of the document, and more.
+
+
+For example, the meta tag can be used to tell the search engine the name of an author as follows:
+<meta name="author" content="Lee Child">
+he <head> element is a container for metadata pertaining to the HTML document itself, and should be placed between the opening <html> tag and the opening <body> tag.
+
+
+Head elements can contain:
+
+
+Titles
+
+Scripts (a computer program that is to be run by the browser)
+
+File attachments (such as CSS files, JavaScript files or even custom fonts)
+
+Character encoding
+
+Meta data
+
+The head element is typically placed near the top of an HTML file.
+To embed means to fix something inside another thing. Content from another source that is included as part of a page is referred to as “embedded content.” This typically refers to content that exists on another website.
+
+
+A common example is an embedded video. This would be like taking a video from YouTube and displaying it on your website.
+The content placed between <body> and </body> tags makes up most of the content on the page. It consists of nearly anything the developer can dream of, such as: embedded video, images, text, animation, tables of data, advertisements, even music. The sky’s the limit, but within the body tag is where you'll place it.
+We use charset to set the exact character set we’re using and as mentioned earlier, UTF-8 is used for over 90% of websites. The W3C actually recommends using UTF-8 for all websites.
+
+Rendering technically means to take the HTML code and translate them into commands the Operating System can execute. Remember, at the end of the day, everything displayed on your screen is controlled by the hardware on your computer and your OS. When we say “render a webpage,” we mean: The web file is received by the browser and processed, the browser then “translates” and passes the data to the OS in a way it can understand and execute, your computer then processes the data and displays the resulting output. Simply put: rendering a web page is displaying a webpage.
+
+
+A note on indenting the lines in your HTML documents: It is good practice, as you develop your HTML skills, to use indentation. Although an HTML document does not require any indentation, it will certainly make your code easier to read and more manageable to work with.
+
+Heading elements allow for placement of heads (titles) of sections. They’re broken into a series of graduated sizes: <h1> through <h6>.
+
+
+So that you can see how they work, on the left we have the code and on the right is the output:
+https://techacademystorage.blob.core.windows.net/htmlandcss/heading.png
+
+A footer is literally text that appears at the foot (bottom) of each page in a book or document.  
+
+
+The <footer> tag defines a footer for a document or section.
+
+
+A footer element typically contains: authorship information, terms and conditions, copyright information, contact information and links to a company’s social media accounts. The bottom of most websites is the footer.
+
+
+It is an important part of a webpage because it is usually used to give the user information needed to contact the primary owner or manager of the website.
+
+The HTML <main> element represents the most important content of the <body> of a document or portion of a document. It consists of content that is directly related to or expands upon the central topic of a document.
+
+On a blog post, for example, the <main> element would be where the article is placed. There should only be one “main” element per HTML page.
+An attribute is a word or phrase used inside an element’s opening tag that controls the element’s behavior.
+
+
+For example, the image <img> tag allows you to place images inside your webpage. The src (source) attribute is used with this <img> tag; it gives the location of the image (where the image is being displayed from). You can see this in the following:
+
+<img src ="https://techacademystorage.blob.core.windows.net/htmlandcss/attributes_code_snippet.png">
+
+In most programming languages, there are certain words you can’t use as variables, labels (names assigned to sections of code), or functions (repeatable blocks of code). These are called reserved words. For example, in the popular programming language Python, def (which defines a function) and if (which creates an if statement) are reserved words.
+
+
+The reason you cannot use these words is that they already mean something else – they are reserved for the programming language.
+
+
+And so, if you were creating a variable in Python, you couldn’t write:
+
+
+if = 10
+
+
+because if already means something in Python.
+
+
+Reserved words are also called keywords (again, code built into the syntax of a language is the keywords of that language).
+“Id” is short for “identification.” One of the most popular attributes is the id attribute.
+
+
+The id attribute specifies a unique name for an HTML element.
+
+
+For example, you can assign a specific <p> element the id (name) “paragraph” as follows:
+<p id="paragraph">This is some text.</p>
+
+Now that you have that id, you can reference (bring up; refer to) it in your code later.
+
+
+You will learn exactly how to do this and why it's useful in an upcoming step.
+
+
+Ids are specific and you can only utilize one id per element. For example, you cannot assign the same <h1> element two different ids. Ids must be specific to one element and cannot contain any spaces.
+
+Another one of the most popular HTML attributes is the class attribute. This is similar to but different than the id attribute.
+
+
+The class attribute is used to assign a category to one or more elements. This is often done when those elements are all related to a certain function or idea on the web page. The class attribute differs from the id attribute in that the same class can be assigned to more than one element on a page, whereas a specific id can only be assigned to one element on a page.
+
+
+Class and id attributes will be covered in more detail in upcoming steps but are mentioned here as two of the most popular HTML attributes
+The anchor <a> element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page).
+
+
+As a note, in older versions of HTML, the word anchor meant what element means now (opening and closing tags and the text in between). Anchor text is the clickable text that is displayed.
+The anchor element needs an attribute called an “href attribute.” “Href” is short for “hypertext reference.” This attribute contains the location of the resource or document that the author intends to link to.
+
+<a href="https://exampleofurl.com/">CheckitOut!</a> example that will display as a clickable link
+Storage hierarchy refers to a system where various data storage devices are given a hierarchical importance ranking as far as how they are used by the CPU. The primary factor influencing a given device's ranking is its response time – how long the device takes to return a requested piece of stored data when the CPU requests the data. Faster response times are ranked higher.
+
+
+A “hierarchical file system” refers to how files are organized and displayed.
+
+
+It is how drives, folders and files are organized and displayed on a computer. In a hierarchical file system, the drives, folders, and files are shown in groups, which allows the user to see only the files they want to.
+
+Inside hierarchical file systems are directories. A directory is a location for storing files on your computer. Directories are another word for “folders.” The terms folder and directory are interchangeable.
+
+
+The route to a file is called a “file path.” The “file path” is the address of a file and specifies the exact location of a file. It provides a “path” to the file.
+
+
+It says, “You can find the file named ‘Winter,’ inside the folder named ‘Poems,’ inside the C drive.”
+
+
+The various components of a path are separated by a character. Usually this character is a slash, backslash or colon (“/,” “\” or “:” respectively).
+
+
+The “/” (slash) symbol separates the different parts of a collection of electronic documents in computers and it has been used for a long time. It was created as an aid to organizing and finding the various files you might store on a computer.
+
+
+Slash is used to show that one item is below another. The item on the left is above the one on the right. An example of this could be:
+
+
+C:/Recipes/BakedChickenRecipe.txt
+
+
+In this example, the drive is the C Drive (name of the hard drive), the folder is called “Recipes,” which contains a text document called “BakedChickenRecipe.”
+ 
+
+A file path describes the location of a file in a web site's folder structure. File paths are used when linking an HTML file to external files like:
+
+
+Style sheets (files containing the CSS code that styles the website)
+
+JavaScript files
+
+Web pages
+
+Images
+A standard path usually consists of three components:
+
+
+A volume (a single accessible storage area with a single file system – typically residing in a single partition [section] of a hard disk) or drive letter followed by a colon ( : ) in Windows. For example, “C:” (drive) or “D:” (drive).
+
+A directory name. A backslash (\) separates subdirectories within the nested directory hierarchy. Forward slashes are frequently accepted as well. For example, “\Documents” or “\Program Files”
+
+A filename. The backslash separates the file path and the filename. For example, “\letter.docx” or “\picture.jpeg.”
+
+If all three of these components are present, the path is absolute.
+
+
+If no volume or drive letter is specified and the directory name begins with a backslash, the path is relative.
+
+
+An absolute path may look something like:
+
+
+C:\GitHubRepos\HTML_CSS\PathProject\FileName.html
+
+
+On the other hand, a relative path may have differing beginnings depending on your folder structure. Commonly seen examples include:
+
+
+Picture.jpg – where the picture file is in the same folder as the requesting file.
+
+images/picture.jpg and ./images/picture.jpg – where the picture file is located in a folder called images on the same folder level as the requesting file.
+
+../images/picture.jpg – where the picture file is located in a folder called images which is in the folder one level up from the current folder of the requesting file.
+
+It is recommended that you use relative paths when linking to images, CSS files, JavaScript files, etc. The reason for this is that if your code is run on a different machine, the absolute path may change – but the relative path always stays the same.
+
+
+There are two kinds of href attributes:
+
+
+Implicit
+
+Explicit
+
+In normal English, implicit means “implied, though not plainly stated.”
+
+
+Explicit means “stated clearly and in detail.”
+
+
+Implicit href attributes are used to create a link to another webpage that is located in the same folder as the page the <a> tag is in. If we use the folder that is your local repository as an example, an implicit link would link to a file within that folder.
+Whereas an explicit href attribute links to a file not contained within the folder(s) associated with your website. 
+Typically, explicit href attribute links are to external websites (other websites). The href attribute from the previous step (<a href="https://www.learncodinganywhere.com/"> Check out The Tech Academy!</a>) is an example of an explicit link.
+
+The <nav> tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website).
+https://techacademystorage.blob.core.windows.net/htmlandcss/nav_code_snippet.png
+Typically the nav element contains implicit links – meaning links on most nav bars on websites don’t usually take you to another website altogether.
+
+Learn how to utilize the HTML blockquote element.
+
+Use the blockquote element within the Assignment.html file.
+
+Learn how to embed a YouTube video in a webpage.
+
+Successfully embed a YouTube video within a webpage.
+
+Save your file and successfully run it in the browser.
+Real time refers to a transmission of data or signal as soon as it is generated.
+
+
+This is best illustrated by the concept of watching a sporting event on TV. The cameras at the event are capturing the game play and are broadcasting it to televisions around the country.
+
+
+In one scenario, there is little to no time lag between when an event occurs at the game, and when the viewers at home see that event. This is “real time.”
+
+
+In another scenario, the events of the game are recorded, and then viewed at another time. This can be called “delayed playback.” The delay can be a few seconds, an hour, a day or any other length of time.
+AJAX stands for Asynchronous JavaScript and XML.
+
+
+Asynchronous means “broken down into separate pieces/occurrences without a set pattern.”
+
+
+XML is an acronym for extensible markup language. This means that computer programmers can create their own document structure, and then use XML to specify markup instructions for the data in those documents.
+
+
+AJAX is a set of tools that can be used in creating asynchronous functions for web sites.
+
+
+AJAX is best understood by relating it to the way a normal web page is accessed by a user. With a web browser, a user issues a “request" to see a specific web page. That request is sent to the web server. That server gathers those requested files and sends them to the user's computer as a “response” to the “request,” and the browser then converts them to a visual form and displays them for the user.
+
+
+If the creator of that web page wants to make it so that some content on the web page can change based on a user action, they have a number of different options.
+
+
+One method is to just send a new request for the web page, along with some instruction to provide the new content that is desired. This can take a long time, though, as every file needed to display that web page has to be sent back to the user's computer by the web server.
+
+
+This is where AJAX can come in. Instead of requesting that the entire page be recreated, the creator of the web site can make it so that just the new content is requested from the web server.
+
+
+The way this works is that user action triggers an asynchronous request to the web server for JUST a specific section of the web page. It is asynchronous in that it is not tied to the full “request” – “response” – “page display” process used for a full web page.
+
+
+The technologies used to accomplish this feature are JavaScript and XML – hence the name "AJAX,” or Asynchronous JavaScript And XML.
+Often in computer programming, there will be part of a computer program that defines the concept of a thing. When the program needs to create one of those things, it looks to the definition and uses it in creating one of them. Another term for these things that can be created is objects.
+
+
+EXAMPLE: A computer program for use in a school might have a definition for a thing called a Student. The program instructions in that definition are essentially answers to the question, “If I were a student, what characteristics and actions are available to me?”
+
+
+We have covered the basics of OOP (object-oriented programming) earlier but let’s delve into it further.
+
+
+Characteristics of a Student object might be things like:
+
+
+Name
+
+Age
+
+Grade Point Average
+
+Areas of study
+
+Actions available to a student might include things like:
+
+
+Calculate new Grade Point Average
+
+Add a new area of study
+
+Remove an area of study
+
+This type of definition is often called an “Object definition” or a “Class.” Here, we have an Object definition for an Object called a “Student.”
+
+
+Until the computer program is directed to create an actual “Student” object, there aren't any in the program.
+
+
+When the program is directed to create an actual Student object, the program looks to the Object definition of a Student and creates an actual Student.
+
+
+To do so, the program will need the data for that actual Student – their name, their age, their GPA. It will then create a “Student.”
+
+
+This “Student” is a collection of data, stored in the computer memory, that defines an INSTANCE of a Student. That is, it is a single occurrence of the type of thing defined by the Object definition called “Student.”
+
+
+EXAMPLE: If a 15-year-old student named Angela Smith enrolled at a school to study Physics and Computer Science, and her Grade Point Average was 3.25, the Student Object created in the computer program might look like this:
+
+
+Object type: Student
+
+Name: Angela Smith
+
+Age: 15
+
+Grade Point Average: 3.25
+
+Major areas of study: Physics, Computer Science
+
+
+The computer program will now maintain all the data about this instance of a Student object in computer memory, as long as it is instructed to do so.
+As a reminder, JSON (pronounced “Jay-son”) stands for JavaScript Object Notation.
+
+
+JSON is a way to represent a specific object, using the JavaScript language. This can be useful in exchanging data between different computers or computer programs. In fact, JSON is what is known as a “data-interchange format” – a method of formatting data in a manner that is easily exchanged between different computers.
+
+
+This is done by using JavaScript language instructions, in a specific format, to describe the various characteristics of the object that is to be exchanged.
+
+
+There are two main elements in JSON that are used to describe the format of data: collections of “key/value pairs” and “ordered lists of values.”
+
+
+A “key/value pair” is a set of two pieces of data.
+
+
+The first, the “key,” can be text data or numeric data. It might be something like “Age” or “Name.” It is used to uniquely identify a particular key/value pair, so it must be unique within a collection of key/value pairs.
+
+
+The second, the “value,” is the actual data associated with that key. It can be any type of data that the language JavaScript can represent. This is data like text, decimal numbers, integers, true/false data, etc.
+
+
+In JSON, key/value pairs are written in this manner:
+key: value
+In our earlier example Student, some of the key/value pairs are:
+“Age”: 15
+“Name”: “Angela Smith”
+
+An “ordered list of values” is just that – a collection of values. Again, these values can be any type of data that the language JavaScript can represent. This is data like text, decimal numbers, integers, true/false data, etc.
+
+In JSON, ordered lists of values are written in this manner:
+
+name of ordered list: [value1, value2,value3, ...]
+In our example Student, the only ordered list of values we have is the list of major areas of study:
+“MajorAreasOfStudy”: [“Physics,” “Computer Science"]
+
+Using our example of the Student “Angela Smith” from earlier, the JSON for that object would look like this:
+https://techacademystorage.blob.core.windows.net/htmlandcss/json_code_snippet.png
+An advantage of the JSON format is that it is relatively easy for people to read and write while also being able to be understood and handled by computers
+XHR stands for XML HTTP Request.
+
+XHR is a set of APIs that can be used by some scripting languages (such as JavaScript). It is used to transfer XML (and other such data) to and from a web server using HyperText Transfer Protocol.
+
+XHR works by establishing a communication path between a web page's client-side and server-side and can be used to transmit many different types of data accurately (including HTML, XML, JSON, etc.).
+
+EXAMPLE: Google Maps uses XHR in transmitting data (maps, directions, etc.) to and from your computer.
+Ruby is a programming language. Some of the main features of the language are the fact that it is suitable for writing scripts as well as robust object-oriented programs. It was created in the early 1990s in Japan, and started to become popular in America in the late 2000s.
+
+EXAMPLE: Sass (a popular set of technologies for beautifying websites) was created in Ruby.
+
+
+
+
+As a reminder, an API (Application Program Interface) is a collection of methods that allow different programs to communicate with each other.
+
+
+It is basically a way that a computer program can tell other programs, “If you want to give or get information, here is the exact way you’ll need to ask me.”
+
+
+The reason programs would have an API is so there is a description of the standard way other programs can access that program. That way, any programmer who has a description of the API for a particular program can make another program connect to the API. If there is no API for a program, other programs can’t access that program easily.
+
+
+While the concept of APIs applies to any type of computer program, it is most often used to describe a function that websites can implement.
+
+
+Here, a website can have a specific computer program on the web server that can send and receive data to other websites, without any human interaction.
+The only thing needed for this system to work would be a description of how to ask for or give data to that program, and a description of what the data you might receive from the program might look like.
+Here is an example of what a request for information from an API might look like:
+GET www.learncodinganywhere.com/students/studentId=435
+Here, an external website wants to request data about a specific student from the website www.learncodinganywhere.com. The request includes a unique identification code for the student: 435
+When the web server for www.learncodinganywhere.com receives this request, it gives it to the API on that web server - the program that knows how to interpret the request, perform the task requested, format any data that is required as a response, and send that response to the program that requested it.
+https://techacademystorage.blob.core.windows.net/htmlandcss/api_code_snippet.png
+The people who create the API would write a description of the way to use the API (create requests) and a description of what the data in the responses will look like. This is called an API specification.
+
+Ruby on Rails is a web application framework (set of tools for making web-based programs) that is written in Ruby.
+
+EXAMPLE: Groupon, Shopify and Airbnb are built on the Ruby on Rails framework.
+
+A key technology term is “state.” It basically means, “the condition or status of a thing at a specific point in time.”
+
+
+This concept of state is used in various ways in technology, and it has more precise meanings in those contexts – but it usually means “what’s the state of this thing at this exact time?”
+
+
+We’re going to examine the way this concept applies to the Web and web development.
+
+
+To start, let’s review some basic elements that apply to communication between connected computers, or networks.
+
+
+One reason to create computer networks in the first place is to allow for the design and operation of what is called a distributed system. A distributed system is a computing system in which the various elements of the system are located on different computers on a network. In this system, the various computers communicate and coordinate their actions by passing messages to each other.
+
+Here is a diagram of a distributed system:
+https://techacademystorage.blob.core.windows.net/htmlandcss/state.png
+A computer program that runs within one of these distributed systems is called a distributed program or a distributed application. In this type of application, there are usually several individual computer programs installed on the various computers in the network. These programs are designed to work together. Each program will perform some function that relates to the overall purpose of the distributed application. Together, this system of networked computers and programs will accomplish the overall purpose of the distributed application.
+
+
+The use of the term “state” that we will examine here revolves around a distributed application structure called “client/server.” In this structure, one or more of the computers in the network are arbitrarily designated as the servers, and one or more other computers are designated as clients.
+
+
+A server acts as the provider of a resource or a service; a client acts as a requester of that resource or service. The server can do things like sending files and images or processing some data the client gave it.
+
+
+The primary factor that applies when computers are communicating and passing data is the concept of a protocol – a precise description of how to structure, send, receive and process data of a specific type.
+
+
+Distributed applications need a protocol that governs how the various elements in the system communicate and coordinate their actions.
+When we look at the Web, the protocol at work is the Hypertext Transfer Protocol (HTTP).
+
+
+When a client establishes a connection to a server using this protocol, a “session” is begun. Here, a session is a temporary and interactive exchange of information between two computers using HTTP. Once the server sends the requested data, the session is ended.
+
+
+This illustration sets the stage for examining the use of the term “state” in the web and web development.
+
+
+Often, the server is the central place used to store information that can change over time. An example might be a list of customers. This list could change at any moment, as new customers are added to the list, or existing customers are removed. The contents of that list at any given point in time are called the “state” of the list.
+
+How does this work? Like this:
+
+
+When a client computer wants to get a list of all customers, it will send a request for that information to the server. The server will gather together the list of customers AS IT EXISTS AT THAT EXACT POINT IN TIME and send that list back to the client computer.
+
+
+If, moments after the server sends that list to the client computer, a customer is added to or removed from the server, that data will not be accounted for in the list the client now has. How could it? The server didn’t have that data at the time it formatted and sent the response to the client.
+
+
+Meanwhile, the client computer could be modifying the information related to one or more of the customers in the list it got – and the server will have no way of knowing that the information has changed on the client.
+
+
+This situation comes about because of the nature of the Hypertext Transfer Protocol. HTTP is what is called a “stateless” protocol. More precisely, this means that neither the client nor the server are aware of the state of the other at any particular point in time.
+
+
+When the Web was first being created and used, this wasn’t much of an issue, because the various web pages that were stored on servers didn’t change based on which client was accessing the web page. Now, however, the web pages that are served up to clients often need to be stateful – that is, the web page content needs to be modified to reflect the state of the client and/or the server. The “list of customers” example above should illustrate this.
+
+
+Because of this fact, various systems have been devised that seek to keep the state of the client and the server synchronized. In other words, they try to make the HTTP protocol, which is inherently stateless, into a “stateful” protocol – meaning, the various actions that take place on the server and the client are remembered and accounted for.
+
+
+One approach, for instance, is to create a persistent connection from the client to the server, so that changes in one can be immediately communicated to the other.
+
+
+In our example above, this could mean that, in the event a customer is deleted from the server after a client has been given a list of customers, then the client is notified of the change and changes its list to reflect the change.
+
+
+As you work in web development (and other development where a client/server system is in place), you will see various tools and systems in use that revolve around this concept of state.
+JavaScript is a scripting language that is commonly used in combination with HTML.
+
+
+In order to give you a better idea of scripts and how HTML utilizes other languages, we will now write some basic JavaScript code.
+
+
+Even though JavaScript is a different language and will be covered thoroughly on its own course, it is necessary to bring up some of it now in order to teach you certain concepts – such as additional data on object-oriented programming, since JavaScript is an object-oriented programming language and HTML isn’t.
+
+
+The <script> tag is used to define a JavaScript script.
+
+
+As mentioned earlier, an “object” is something that has state and behavior.
+
+
+A “method” is something an object can do – a named sequence of events.
+
+
+“Alert” is a JavaScript method that displays an alert box with an “OK” button.
+
+
+Here is how to create an alert box in HTML and JavaScript:
+<!DOCTYPE HTML>
+<html>
+<script>
+alert("Hello World!);
+</script>
+</html>
+
+
+In our earlier example of the JavaScript alert box, we can do this by first creating a JavaScript file that contains the following code: 
+alert("Hello, World! I am an alert box!");
+We would save this file as Hello_World.js and then we open a new file. 
+In this new file we write:
+<!DOCTYPE HTML>
+<html>
+     <script src="Hello_World.js"></script>
+</html>
+Nearly every computer programming language comes with certain data types built in and allows for the creation of other types of data by computer programmers. In JavaScript, these various types of data are called “values.” There are six value types in JavaScript:
+
+
+Strings (data that represent text or a series of text)
+
+Numbers 
+
+Booleans (true or false statements)
+
+Objects (things with state and behavior)
+
+Functions (a block of organized, reusable computer code used to perform a single, related action – also called a subprogram or subroutine)
+
+Values that are undefined 
+
+A common action taken in coding is to assign variables. Variables are key in every programming language.
+
+
+As a reminder, a variable is a value that can be altered, depending on conditions or data passed to the program.
+
+
+In JavaScript, we can create variables by typing var _____ (name of variable).
+
+There is a set of terms that can be confusing in learning computer programming. These terms all relate to a fundamental element of all computer programs: sub programs. We have touched upon this earlier but we are going to further expound upon it now.
+
+
+A sub program in the most basic sense is this: a set of computer instructions, separate from the main program, that can be executed on demand by the main program.
+
+
+A call is a direction by a main computer program to execute the tasks of a subprogram.
+
+
+More specifically a “call” is when a main program temporarily transfers control of the computer to a subprogram. Once the subprogram is done executing, control of the computer is returned to the main program. A program could make many “calls” to multiple subprograms as the program does its sequence of tasks.
+
+
+Sub programs were an early development in computer programming, and their creation was driven by one basic factor: Programmers quickly found that they were often having a program do certain exact things many times as the program was being executed. This meant that the exact same set of programming instructions had to be entered in the computer program every time that thing was needed.
+
+
+This activity had two fundamental weaknesses. First, the process of typing the same exact instructions over and over again was time-consuming and error-prone for programmers. Second, if a programmer wanted to make a change to how that thing was done, they had to find every place in the program where they had entered the duplicate instructions and make the change in every one. In other words, these commonly-used chunks of computer code were hard to create and maintain.
+
+
+The answer to this problem was a sub program. Here, the programmers would type in the set of instructions that performed the needed action, and give that set of instructions a unique name. This set of instructions was called a sub program, and was not considered part of the main program that the computer was going to execute. Instead, the main program was modified so that it would just execute that sub program whenever that particular action was needed.
+https://techacademystorage.blob.core.windows.net/htmlandcss/subprogram.png
+
+In the early years of computer programming languages, where programmers worked with various low-level languages barely a step removed from machine language, the actual implementation of the concept stayed quite simple and very much as described above. However, as higher-level programming languages were developed, this concept began to develop variations and nuances. The central concept of pre-made sets of code that can be used as needed has remained, but the designers of the various languages have often implemented the concept in different ways, depending on the design objectives of the language.
+
+Because of this, you will find many related terms in this area. Some of the terms in use are:
+
+Functions
+
+Methods
+
+Routines
+
+Subroutines
+
+Subprograms
+
+Procedures
+
+At a high-level, these terms mean the same thing but if you try to clear up their definitions, you can quickly become confused. Some sources will tell you that they all basically hold the same meaning. Other sources will articulate specific differences and similarities between two or more of the terms. It can be difficult to nail down.
+
+
+This is because of a few factors. First, some programming languages use the same term to mean slightly different things. Second, some programming languages are designed to implement this concept in two related ways, so the language designers needed two different terms.
+
+
+What this means in terms of your study of various computer programming languages is that you’ll often have to research what a specific term means in that language, ignoring source data that’s related to other languages.
+
+
+This concept is best illustrated through an example. We’ll use the popular programming language JavaScript to do this.
+JavaScript uses two related terms: function and method. They are very similar, in that they both involve the creation of a pre-made set of instructions that can be made use of by other program elements. They do have some subtle but important differences, however. Let’s explore them.
+
+
+First, some basic definitions – and remember, these definitions are for the use of these terms in JavaScript.
+
+
+In JavaScript, an “object” is a type of data that represents a thing through its various properties (characteristics – what it looks like) and behavior (what it can do).
+
+
+An example of an object would be a “vehicle.” Thinking of this common real-world thing as an “object” that will be stored in computer memory and kept track of as a program is executed, we can think of various properties and behavior for it. Under properties, we could have things like “chassis type,” “engine type,” “number of doors,” “speed,” etc. Under behavior, we could have things like “accelerate,” “deccelerate,” “turn right,” “turn left,” etc.
+An example of creating an object in JavaScript might look like this:
+
+var student = {
+	firstName: "Jane",
+	lastName: "Smith",
+	age: 28,
+	gradeAverage: 3.5
+};
+
+In this example, we have only specified properties for the “student” object, and not specified any behavior. We will look at that in a moment.
+
+A function is a repeatable block of code that executes certain actions and performs tasks. You execute a function by calling it. This is also called “invoking” the function (“invoking” means “causing a procedure to be carried out”).
+
+One writes a JavaScript function by stating the keyword “function,” then a name for the function, then parentheses, like this:
+
+function name()
+
+Functions are valuable because of code reusability – you can invoke functions over and over. Since functions in JavaScript contain properties and methods, they are basically objects.
+
+Functions are useful so you don’t have to keep retyping code; you can instead simply invoke the function whenever needed.
+
+An example could look like this:
+
+function add(num1, num2) 
+	{
+	return num1 + num2;
+	}
+Other JavaScript code elements could call this “add” function by specifying its name and passing it two numbers. That could look like this:
+
+var sum = add(5, 7);
+
+Here, the code would create the variable called “sum,” call the function “add” and pass it the two numbers 5 and 7, and take the result (12) and assign that value to the variable “sum.”
+n JavaScript, a method is a set of code associated with an object that is designed to change the state of that object when it executes. In other words, the method is performed on the object.
+
+You create these methods when you create the object. Let’s look at how we might do that with our previous example of a “student” object:
+As we just covered, a “method” is an action that an object can perform. It is a named sequence of events.
+
+
+The document.getElementById method returns (executes and provides relevant output) an element.
+
+
+An “attribute” is a specification that assigns a property (name; characteristic) to something. Basically, an attribute is metadata (data that describes other data).
+
+
+The element returned by document.getElementById has an Id attribute with a specific value assigned to it. The Id is a variable.
+
+example:
+
+<h1 id="Header_1">This is my Heading</h1>
+We have assigned the h1 element the Id “Header_1.” To run and display (return) this element, we write:
+document.getElementById("Header_1").innerHTML
+“innerHTML” gets or sets the HTML markup contained within the element.
+
+
+Document.getElementById is used mainly to control or get information from an element within your code. If it can’t find the element with the specified Id, it will return “null.”
+
+
+var student = 
+	{
+	  firstName: "Jane",
+	  lastName: "Smith",
+	  age: 28,
+	  gradeAverage: function(avg)
+	    {
+	    return avg;
+	    }
+	}
+Here, we aren’t setting the property “gradeAverage” to a fixed number of 3.5. Instead, we are setting that property to the value returned by a set of code. Specifically, that code will take in a number (the variable “avg”) and set the value of the “gradeAverage” property to the value of that variable.
+
+Executing that code could look like this:
+student.gradeAVerage(3.4);
+Here, we are telling the computer to make use of the object called “student.” Specifically, the computer is to run the function “gradeAverage” that is defined in the “student” object. Since that function needs an input (the variable “avg”), we give it the number 3.4.
+
+
+So here’s the distinction: In this specific situation, that function “gradeAverage” is called a method. Yes, it’s confusing – until you recall that in JavaScript, a method is a set of code, associated with an object, that is performed on the object itself. So we have the confusing situation of a property of an object that we are defining using a function – but we’re calling the action performed by the function a method.
+
+In actual practice, there is very little danger in using these terms interchangeably – and you’ll often find technical sources will do so. But occasionally you’ll find a source that uses the terms in their strictest sense.
+
+The lessons here are these:
+
+First, there are many varied terms in use for the concept of “a block of code that can be executed on demand by other code.”
+
+Second, in order to clarify any potential difference between these various terms, you’ll need to investigate their exact meaning in the language you’re concerned with.
+
+Any attempt to give them a blanket, universal meaning ignores the subtleties described here.
+Let’s look at creating a function using the document.getElementById method:
+
+<!DOCTYPE html>
+<html>
+<body>
+	<button onclick="My_First_Function()">
+		Click Here!
+	</button>
+	<p id="Ireland"></p>
+<script>
+	function My_First_Function() {
+		var String = "Set your Itinterary!";
+		var result = String.fontcolor("purple");
+		document.getElementById("Ireland").innerHTML = 
+		result;
+		}
+</script>
+</body>
+</html>
+The above code accomplished the following:
+
+Created a button element.
+
+Utilized the ID attribute and assigned the paragraph element the value “Ireland.”
+
+Returned the paragraph element by calling the “Ireland” value that we assigned earlier (when writing the ID attribute).
+
+Everything inside our curly brackets { } is our function.
+</script>
+</body>
+</html>
+
+A node is a point where lines meet; it is where paths intersect. In computers, there are two main types of nodes:
+
+A node is something connected to a network. If several computers are joined together, each computer is considered a node.
+
+In a set of data that is organized into a hierarchical (based on rank) structure, a node is any individual element in that structure.
+https://techacademystorage.blob.core.windows.net/htmlandcss/node2.PNG -- Examples of nodes in this structure are: “class2,” “Billy Banana,” “students1,” “school.”
+As a reminder, a common nonlinear data structure (arrangement of data where the elements of the data don't necessarily follow one after the other) is the tree. Let's take a look at this diagram with some of the important features of trees highlighted.
+
+https://techacademystorage.blob.core.windows.net/overviewofsoftwaredevelopment/code_snippet_trees.jpg
+
+In this diagram, we can see that the starting point, or the root node, is circled in blue. A node is a simple structure that holds data and links to other nodes. In this case, our root node contains the data string “John” and three links to other nodes. Notice that the group of nodes circled in red do not have any links. These nodes are at the ends of the branches and they are appropriately called leaves or leaf nodes. In our diagram, the nodes are connected with solid black lines called arcs or edges. These edges show the relationships between nodes in the tree.
+
+
+One important relationship is the parent/child relationship. Parent nodes have at least one edge to a node lower in the tree. This node is called the child node. Nodes can have more than one child, but children can only have a single parent. Notice that the root node has no parent, and the leaf nodes have no children. The final feature to note in our diagram is the subtree. At each level of the tree, we can see that the tree structure is repeated. For example, the two nodes representing “Charles” and “Rick” compose a very simple tree with “Charles” as the root node and “Rick” as a single leaf node.
+
+We will now cover an element of the Web that can help a developer greatly in their web development tasks.
+
+
+First, let’s review some fundamentals of the Web. You will have learned much of this already but there’s going to be some new data.
+
+
+The Web is a collection of linked electronic documents. These documents, called “web pages,” are precisely formatted text documents that define the content and appearance of a visual display of the web page.
+
+
+These web page documents are written in a specialized type of computer language called a “markup language.” This is a computer language whose instructions are used to tell the computer how to display and format visual elements.
+
+
+One aspect of markup language instructions is that they reside in the same document as the content that they affect, and the instructions can be differentiated from that content.
+
+
+There are several markup languages in use in computer programming. The one used in web development is Hyper Text Markup Language.
+
+
+As we’ve covered, HTML uses instructions called “tags” to alter the format and appearance of displayed content and the combination of a tag and its associated content is called an “element.”
+
+
+The basic operation of the Web is this:
+
+
+A person uses a computer program on their computer called a web browser.
+
+They instruct their browser to request a specific web page.
+
+The browser sends a request to the web server where that web page is stored. Again, the web page is an HTML file.
+
+The web server sends the web page back to the browser.
+
+The browser processes the HTML in the web page and renders a visual display based on the HTML.
+
+Usually, HTML documents are created by hand by programmers. Often, though, programmers have a need to change these HTML files programatically – that is, to change the markup instructions and/or the content based on logic contained in a computer program.
+REPL is short for read-eval-print-loop.
+
+
+A REPL is a simple, interactive computer programming environment that allows developers to write code and see a near-immediate result.
+
+
+The REPL takes input, evaluates (executes) it, and returns the result to the user. They’re much simpler than IDEs but have much less to offer in terms of functionality and tools.
+
+
+EXAMPLE: Here is a REPL provided by w3schools:
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default
+Programmers need an interface that can expose the form and content of any given HTML document in such a way that a computer program can analyze and modify the document as needed.
+
+
+In other words, they need an API – an Application Programming Interface – for the web page.
+
+
+In simple terms, an API is a system that allows one program to talk to another. Here, what is needed is a tool that can scan an HTML document and then create a representation of that document that other programs can interact with.
+The interface for HTML documents exists and it is called the Document Object Model, or the DOM. It is pronounced “dom,” not “dee-oh-em.”
+
+
+The middle word is “object” and in its simplest form, an object is just “something the computer is keeping track of.” Usually it’s a variable, or a data structure, or similar item. It’s essentially a value stored in computer memory, so it has a location and an identifier that can be used to identify and use it.
+
+
+So the DOM is a model of the various objects in the HTML document – a document object model.
+
+
+The DOM presents the HTML document as a tree structure, where each node in the tree is an object representing a part of the HTML document.
+https://techacademystorage.blob.core.windows.net/htmlandcss/dom_code_snippet.png
+https://techacademystorage.blob.core.windows.net/htmlandcss/dom2.png
+
+
+A DOM for an HTML page is generated by specialized computer programs. These programs scan through an HTML file, locating the various elements in the page described by that file, and then they create the tree structure that represents the unique arrangement of elements on that page. That tree structure, the DOM, is itself then held in computer memory.
+
+
+Once the DOM is generated for a particular HTML document, other programs can access the Object Model and the various parts of the document that are represented in it. They can get data about the various elements on the page, and can even modify the page.
+
+
+Let’s look at some examples of how this could be done, using pseudocode.
+Suppose you wanted to find all paragraph elements in an HTML document. You might use code like this:
+
+var foo = document.getElementByTagName("p);
+The variable called “foo” would now contain a collection of all the paragraph tags in the document.
+
+
+Many different programming languages can be used to work with the DOM. One of the most common is JavaScript; in fact, the code example above is actually JavaScript.
+The DOM allows you to locate elements in an HTML document in several ways. You can search for elements by their class name or their id. You can locate elements that are organized in a collection, such as those inside a <form> element. Many other parts of the HTML webpage are accessible as DOM objects, such as:
+
+
+body
+
+head
+
+anchors
+
+images
+
+title
+
+scripts
+
+and more
+
+
+Having the DOM also opens up the ability to change the HTML for a web page, or to generate HTML entirely from scratch. In fact, an entire web page could be created by a program, only coming into existence after a DOM for it is constructed.
+
+
+Most browsers generate a DOM for the web pages they display, and most browsers allow you to look at that DOM. Most browsers have built-in tools to help web developers; they are generally called “developer tools.”
+The DOM can be accessed by opening up these developer tools in your browser.
+
+
+Let’s look at an example of this, using the web browser Chrome. You can open Developer Tools in Chrome by right-clicking on a web page and clicking “Inspect.” A second window will open up, showing a great deal of information about the web page and the browser. There are tabs in this window that let you select what you’d like to view. The DOM is viewable in the “Elements” tab.
+
+
+For our HTML above, the DOM would look like this from within those Developer Tools in Chrome:
+This looks much like the actual HTML from the web page file itself – but it’s actually a tree structure that represents the structure of the various objects that make up the web page. The “down arrows” in the display of the DOM are a graphical interface that lets you expand and collapse the individual nodes on the tree structure of the DOM.
+
+
+Many browsers even let you edit the DOM from within these tools and see those changes reflected immediately in the displayed web page – but it’s important to know that those changes aren’t being made to the actual stored HTML files that were given to the browser - you’re only changing the DOM that the browser is creating and using to create the display. In order to permanently change the web page, you’ll need to change the actual files that will be given to the browser.
+
+There is a lot more to know about the DOM, and as you do more web development, you’ll pick up a lot more knowledge and skill. But you now have the basic principles and application of the DOM.
+he font element can be utilized to choose various font attributes (such as color, type and size).
+
+There are two ways to specify color using the font element and color attribute:
+
+By writing the color like:
+<font color="yellow">Text Here</font>
+Specify the color using its hex code (a way of specifying color using hexadecimal values). For example:
+
+<font color="#0000FF">Text</font>
+https://www.rapidtables.com/web/color/html-color-codes.html
+
+To assign a font color to an element (such as a paragraph) you write your code as follows:
+
+<p><font color="green">This text is Green.</font></p>
+
+To assign the type of font you want to utilize, use the face attribute within the font element, like this:
+<font face="Arial">This text is written in Arial font!</font>
+As a note: if you want to change the font color and type of font within the same font element, you write your HTML code like this (putting both attributes within the font opening tag):
+<p>
+	<font color="purple" face+"Roboto" size="7">
+	      This is purple text in Roboto font.
+	</font>
+</p>
+The size attribute uses sizes from 1 to 7 – the default browser size is 3.
+
+
+NOTE: The face attribute is not HTML5 but comes from an earlier version of HTML. We are teaching you how to do some styling using HTML to help with your comprehension of this language. Please keep in mind that when you learn CSS later on this course, that it is best practice to handle all styling (including fonts) with CSS.
+
+In addition to the <strong> element, there are other elements that can be used to alter and emphasize text:
+
+
+<b>: makes text bold
+
+<i>: italicizes text
+
+<u>: underlines text
+
+To display a sentence that says:
+
+
+This is bold, this is italicized and this is underlined
+
+
+we would write our code like this:
+<p><b> This is bold, </b><i> this is italic </i> and <u> this is underlined </u></p>
+
+

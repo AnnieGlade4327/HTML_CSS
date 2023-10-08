@@ -1,0 +1,125 @@
+test
+C:\Users\andre\Documents\folder_A
+This is my text file
+
+cd to access folders. you must go direcftory directory one at a time
+dir will show the info for current directory
+cd.. takes you back to previous folder
+mkdir will make a new directory
+cd to new folder
+command echo this is file 1 .file1/txt
+a new folder named file1.txt is created
+(or whatever)
+to move a file
+move file1.txt (and then put in address C:\Users\andre\etc)
+rmdir stands for remove directory so to do this,
+in command line,
+type in rmdir *whichever folder, in this case* "Folder_1"
+to rename a file: 
+rename file_A.txt file2.txt
+then check dir
+and it will show it renamed from file_A to file2
+cd C:\ will take you back to root
+then to go back or into new folder:
+C:\>   cd Users\andre\Documents\folder_A
+
+RECAP:
+
+Microsoft Windows [Version 10.0.22621.2283]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\andre>cd..
+
+C:\Users>cd andre
+
+C:\Users\andre>cd Documents
+
+C:\Users\andre\Documents>cd folder_A
+
+C:\Users\andre\Documents\folder_A>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3819-4094
+
+ Directory of C:\Users\andre\Documents\folder_A
+
+10/05/2023  10:39 PM    <DIR>          .
+10/05/2023  10:37 PM    <DIR>          ..
+10/05/2023  10:39 PM                61 file_A.txt
+               1 File(s)             61 bytes
+               2 Dir(s)  806,623,928,320 bytes free
+
+C:\Users\andre\Documents\folder_A>mkdir Folder_1
+
+C:\Users\andre\Documents\folder_A>cd Folder_1
+
+C:\Users\andre\Documents\folder_A\Folder_1>Echo this is file1 >file1.txt
+
+C:\Users\andre\Documents\folder_A\Folder_1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3819-4094
+
+ Directory of C:\Users\andre\Documents\folder_A\Folder_1
+
+10/05/2023  10:45 PM    <DIR>          .
+10/05/2023  10:43 PM    <DIR>          ..
+10/05/2023  10:45 PM                16 file1.txt
+               1 File(s)             16 bytes
+               2 Dir(s)  806,620,536,832 bytes free
+
+C:\Users\andre\Documents\folder_A\Folder_1>move file1.txt C:\Users\andre\Documents\folder_A
+        1 file(s) moved.
+
+C:\Users\andre\Documents\folder_A\Folder_1>cd..
+
+C:\Users\andre\Documents\folder_A>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3819-4094
+
+ Directory of C:\Users\andre\Documents\folder_A
+
+10/05/2023  10:49 PM    <DIR>          .
+10/05/2023  10:37 PM    <DIR>          ..
+10/05/2023  10:45 PM                16 file1.txt
+10/05/2023  10:39 PM                61 file_A.txt
+10/05/2023  10:49 PM    <DIR>          Folder_1
+               2 File(s)             77 bytes
+               3 Dir(s)  806,622,642,176 bytes free
+
+C:\Users\andre\Documents\folder_A>rmdir "Folder_1"
+
+C:\Users\andre\Documents\folder_A>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3819-4094
+
+ Directory of C:\Users\andre\Documents\folder_A
+
+10/05/2023  10:52 PM    <DIR>          .
+10/05/2023  10:37 PM    <DIR>          ..
+10/05/2023  10:45 PM                16 file1.txt
+10/05/2023  10:39 PM                61 file_A.txt
+               2 File(s)             77 bytes
+               2 Dir(s)  806,621,376,512 bytes free
+
+C:\Users\andre\Documents\folder_A>rename fileA.txt file2.txt
+The system cannot find the file specified.
+
+C:\Users\andre\Documents\folder_A>rename file_A.txt file2.txt
+
+C:\Users\andre\Documents\folder_A>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3819-4094
+
+ Directory of C:\Users\andre\Documents\folder_A
+
+10/05/2023  10:55 PM    <DIR>          .
+10/05/2023  10:37 PM    <DIR>          ..
+10/05/2023  10:45 PM                16 file1.txt
+10/05/2023  10:39 PM                61 file2.txt
+               2 File(s)             77 bytes
+               2 Dir(s)  806,619,537,408 bytes free
+
+C:\Users\andre\Documents\folder_A>cd C:\
+
+C:\>cd Users\andre\Documents\folder_A
+
+C:\Users\andre\Documents\folder_A>

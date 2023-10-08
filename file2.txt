@@ -1,0 +1,5 @@
+test
+C:\Users\andre\Documents\folder_A
+This is my text file
+test
+merge conflict test
