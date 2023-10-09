@@ -1,3 +1,12 @@
+.another_one {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(69, 53, 63);
+    color: rgb(200, 211, 242);
+    font-size: large;
+    font-style: oblique;
+}
 .font_1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
