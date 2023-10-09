@@ -1,4 +1,9 @@
-
+table {
+   border: 3px rgb(10, 30, 35);
+}
+td:hover {
+    background-color: darkorange;
+}
 .anythingbutGOTtable {
     border-width: 83%;
     border-radius: 7px;
