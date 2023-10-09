@@ -1,0 +1,32 @@
+.anythingbutGOTtable {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(69, 53, 63);
+    color: rgb(200, 211, 242);
+    font-size: large;
+    font-style: oblique;
+}
+.except {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(69, 53, 63);
+    color: rgb(200, 211, 242);
+    font-size: large;
+    font-style:normal
+
+}
+.table {
+    border-width: 75px;
+    border-radius: 25px;
+    border-color: rgb(226, 236, 237);
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(69, 53, 63);
+    color: rgb(200, 211, 242);
+    font-size: large;
+    font-style: normal;
+
+}
