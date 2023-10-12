@@ -74,3 +74,6 @@ body {
 .contact-container {
   font-size: small;
 }
+.references{
+  list-style-type: square;
+}
