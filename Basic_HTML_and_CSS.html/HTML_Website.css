@@ -1,20 +1,76 @@
 * {
-    text-align: center;
-    font-family: monospace;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.span {
+  font-size: larger;
+}
+.navbar-nav-scroll {
+  font-size: large;
+  text-align: center;
+  box-sizing: content-box;
+  box-shadow: #e18282;
+  font-weight: 700;
+}
+body {
+  margin: 0;
+}
+.header {
+  text-align: center;
+  padding: 32px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  display: -ms-inline-grid;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 0 4px;
 }
-
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+.galley {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%;
+  /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 7px;
+  vertical-align: middle;
+}
+
+/* Styling buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 11px 17px;
+  background-color: #e18282;
+  cursor: pointer;
+  font-size: 77px;
+}
+.btn.active {
+  background-color: #666;
+  color: rgb(54, 142, 139);
+}
+.contact {
+  font-size: medium;
+}
+.contact-container {
+  font-size: small;
 }
