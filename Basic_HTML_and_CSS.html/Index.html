@@ -54,15 +54,88 @@
     <!--End home-->
     <!--Gallery-->
     <section>
-        
+        <div id="gallery">
+            <h1>Gallery</h1>
+            <!--Photo Container-->
+        </div>
+
+        <div class="header" id="myHeader">
+            <h1>Image Grid</h1>
+            <p>Click on the buttons to change the grid view.</p>
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="thumbnail_1.jpg" style="width: 350px" height="307px">
+                <img src="thumbnail_3.jpg" style="width: 350px" height="307px">
+                <img src="thumbnail_2.jpg" style="width: 350px" height="307px">
+            </div>
+            <div class="column">
+                <img src="thumbnail_4.jpg" style="width: 350px" height="307px">
+                <img src="thumbnail_5.jpg" style="width: 350px" height="307px">
+                <img src="thumbnail_6.jpg" style="width: 350px" height="307px">
+            </div>
+            <div class="column">
+                <img src="thumbnail_7.jpg" style="width: 350px" height="307px">
+                <img src="thumbnail_8.jpg" style="width: 350px" height="307px">
+                <img src="thumbnail_9.jpg" style="width: 350px" height="307px">
+            </div>
+        </div>
+
+        <script>
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+
+            // Declare a loop variable
+            var i;
+
+            // Full-width images
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "100%";  // IE10
+                    elements[i].style.flex = "100%";
+                }
+            }
+
+            // Two images side by side
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "50%";  // IE10
+                    elements[i].style.flex = "50%";
+                }
+            }
+
+            // Four images side by side
+            function four() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "25%";  // IE10
+                    elements[i].style.flex = "25%";
+                }
+            }
+
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
     </section>
     <!--End Gallery-->
     <!--adding accordion button because it is a long paragraph-->
     <div class="accordion" id="moreInfo">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
                     More Info!
                 </button>
             </h2>
@@ -85,59 +158,61 @@
                 </div>
             </div>
         </div>
-    <!--RSVP? cant read-->
-    <section>
-        <div id="contact">
-            <div class="contact-container" id="form">
-                <h1>Please feel free to reach out for more information<br>
-                    or if you have anything you would like to share,<br>
-                    send a message!</h1>
+        <!--RSVP? cant read-->
+        <section>
+            <div id="contact">
+                <div class="contact-container" id="form">
+                    <h1>Please feel free to reach out for more information<br>
+                        or if you have anything you would like to share,<br>
+                        send a message!</h1>
+                </div>
+                <h2><span>The Hydrocarbon Highway, Transwest Express powerline and Uintah Basin Railway
+                        are all current threats to this amazing and vital migratory and endemic wilderness
+                        corridor.</span><br>
+                    <p> It is important to remember that the reasoning used by the recent judge that shut down the
+                        Uintah Basin Railway right-of-way and federal permitting for the project in August (of 2023)
+                        is largely in part due to concerns around the railline meeting of up old railine infrastructure,
+                        worried the
+                        solidified or high wax crude
+                        would be transported along this section which runs along the mighty Colorado River. While this
+                        is not the case, the reasons
+                        we should be sworking to stop these three projects have much more to do with it being a vital
+                        migratory corridor in addition
+                        to a very important watershed to not just Utah and Northwestern Colorado, but the entire four
+                        corners regions of the United States.
+                        The loss of these vital old growth forests and woody shrubs, wildflowers and other pertinent
+                        endemic and native plantlife throughout
+                        the Ashley National Forest, public,private, and Ute lands surrounding the High Uintahs of
+                        Eastern Utah, mass deforestation and
+                        clear cutting has already had a detrimental affect on our climate and airquality in recent
+                        years.
+                        We do not have anymore Understory to spare in this region after the last 6 years of a
+                        neo oil-boom post the 2017 environmental rollbacks and gutting of wilflife protections here in
+                        the
+                        state of Utah.
+                </h2>
+                <p>
+                    Please provide your preferred contact information or send us a message:
+                </p>
+                <div>
+                    <form action="" method="post">
+                        <input class="rsvp" type="text" value="First Name">
+                        <input class="rsvp" type="text" value="Last Name">
+                        <input class="rsvp" type="text" value="E-Mail Address">
+                        <input class="rsvp" type="text" value="Phone Number">
+                        <input class="rsvp" type="text" value="Subject/Title"><br><textarea rows="7"
+                            cols="15"></textarea>
+                        <div class="form-spacer">
+                            <label class="terms">Terms and Conditions</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <h2><span>The Hydrocarbon Highway, Transwest Express powerline and Uintah Basin Railway
-                    are all current threats to this amazing and vital migratory and endemic wilderness
-                    corridor.</span><br>
-                <p> It is important to remember that the reasoning used by the recent judge that shut down the
-                    Uintah Basin Railway right-of-way and federal permitting for the project in August (of 2023)
-                    is largely in part due to concerns around the railline meeting of up old railine infrastructure,
-                    worried the
-                    solidified or high wax crude
-                    would be transported along this section which runs along the mighty Colorado River. While this
-                    is not the case, the reasons
-                    we should be sworking to stop these three projects have much more to do with it being a vital
-                    migratory corridor in addition
-                    to a very important watershed to not just Utah and Northwestern Colorado, but the entire four
-                    corners regions of the United States.
-                    The loss of these vital old growth forests and woody shrubs, wildflowers and other pertinent
-                    endemic and native plantlife throughout
-                    the Ashley National Forest, public,private, and Ute lands surrounding the High Uintahs of
-                    Eastern Utah, mass deforestation and
-                    clear cutting has already had a detrimental affect on our climate and airquality in recent
-                    years.
-                    We do not have anymore Understory to spare in this region after the last 6 years of a
-                    neo oil-boom post the 2017 environmental rollbacks and gutting of wilflife protections here in the
-                    state of Utah.
-            </h2>
-            <p>
-                Please provide your preferred contact information or send us a message:
-            </p>
-            <div>
-                <form action="" method="post">
-                    <input class="rsvp" type="text" value="First Name">
-                    <input class="rsvp" type="text" value="Last Name">
-                    <input class="rsvp" type="text" value="E-Mail Address">
-                    <input class="rsvp" type="text" value="Phone Number">
-                    <input class="rsvp" type="text" value="Subject/Title"><br><textarea rows="7" cols="15"></textarea>
-                    <div class="form-spacer">
-                        <label class="terms">Terms and Conditions</label>
-                    </div>
-                    <div>
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
-        </div>
-        </div>
-        </div>
+    </div>
+    </div>
     </section>
     <!--End RSVP-->
     <!--Footer-->
