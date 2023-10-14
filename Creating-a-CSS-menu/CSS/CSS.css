@@ -36,5 +36,9 @@ body {
     border-radius: 1.5px;
     background-color:cadetblue;
     cursor: pointer;
+}
+.menu li :hover {
+    background-color: #9acbcb;
+    color: #fff;
 
 }
