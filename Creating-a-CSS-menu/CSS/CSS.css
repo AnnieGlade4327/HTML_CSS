@@ -42,3 +42,9 @@ body {
     color: #fff;
 
 }
+/*this is where the hover should turn into a drop down but it isnt funcitonal yet*/
+.menu li:hover ul {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+}
