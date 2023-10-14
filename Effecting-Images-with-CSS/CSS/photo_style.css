@@ -7,10 +7,22 @@ p {
 .photo {
     position: relative;
     line-height: 0;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     overflow: hidden;
-    border-radius: 8px;
-    padding: 1px;
-    border: 1px solid #021a40;
+    border-radius: 7px;
+    padding: 2px;
+    border: 2px solid #021a40;
     background-color: #ff0;
+}
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 171px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
 }
