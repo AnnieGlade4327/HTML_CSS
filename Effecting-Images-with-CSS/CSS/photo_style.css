@@ -1,0 +1,16 @@
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+}
