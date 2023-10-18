@@ -5,26 +5,35 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+
 body {
     font-size: 14px;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
 }
- footer,
- nav {
-    display: block;
- }
 
- .terms {
+footer,
+nav {
+    display: block;
+}
+
+.terms {
     margin-top: 13%;
- }
- h1, h2, h3, h4, h5, h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', sans-serif;
- }
- h1 {
+}
+
+h1 {
     line-height: 50px;
     font-weight: 900;
     font-size: 30px;
@@ -32,8 +41,9 @@ body {
     text-align: center;
     color: #E91C1C;
     text-shadow: 2px 2px 3px rbga (0, 0, 0, 0.5);
- }
- h1::after {
+}
+
+h1::after {
     /*This is the underline*/
     display: block;
     content: "";
@@ -42,69 +52,72 @@ body {
     background: #E91C1C;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
- }
+}
 
- h2 {
+h2 {
     line-height: 50px;
     color: #E91C1C;
- }
+}
 
- h3 {
+h3 {
     line-height: 30px;
     padding-bottom: 20px;
- }
- h4 {
+}
+
+h4 {
     padding-top: 25px;
     line-height: 40px;
     padding-bottom: 0px;
     font-size: 22px;
     font-weight: 900;
- }
+}
 
- p {
+p {
     font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
- }
+}
 
- .text-center {
+.text-center {
     text-align: center;
- }
+}
 
- .heading-padding {
+.heading-padding {
     padding-bottom: 40px;
- }
- section {
+}
+
+section {
     padding-top: 50px;
     margin-top: 50px;
- }
+}
 
- .navbar {
+.navbar {
     height: 105px;
     max-height: 340px;
     display: inline-block;
- }
+}
 
- .container {
+.container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
- }
+}
 
- .container-fluid {
+.container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
- }
+}
 
- .row {
+.row {
     margin-right: -15px;
     margin-left: -15px;
- }
+}
 
-.clearfix::after, /* :after is now ::after w a double colon*/
+.clearfix::after,
+/* :after is now ::after w a double colon*/
 .container::after,
 .navbar::after {
     clear: both;
@@ -147,10 +160,13 @@ body {
     width: 100%;
     display: block;
     height: auto;
-    padding-top: 350px; /*spacer before main title logo*/
-    padding-bottom: 500px; /*spacer after*/
+    padding-top: 350px;
+    /*spacer before main title logo*/
+    padding-bottom: 500px;
+    /*spacer after*/
     color: #fff;
 }
+
 .head-main {
     text-shadow: 2px 4px 5px rgba (0, 0, 0, 0.9);
     font-variant: small-caps;
@@ -166,22 +182,22 @@ body {
     padding: 10px;
 }
 
- .head-sub-main {
+.head-sub-main {
     font-size: 23px;
     font-weight: 900;
     padding: 5px 20px 20px 20px;
     text-transform: uppercase;
- }
+}
 
- .head-last {
+.head-last {
     font-size: 18px;
     font-weight: 900;
     padding: 5px 20px 20px 20px;
     border: 1px dotted #fff;
     padding: 5px;
- }
+}
 
- .flex-container {
+.flex-container {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
@@ -190,22 +206,22 @@ body {
     margin: 0px auto;
     background-color: rgba(100, 65, 0, .3);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
- }
+}
 
- #contact {
+#contact {
     background-color: #f5f3f3;
- }
+}
 
- .reservation {
+.reservation {
     width: 60%;
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
     background-color: rgba(100, 65, 0, .3);
     box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
- }
+}
 
- .reservation h2 {
+.reservation h2 {
     width: 70%;
     text-align: center;
     margin: 0 auto;
@@ -214,9 +230,9 @@ body {
     font-size: 1.3em;
     letter-spacing: 0pt;
     word-spacing: 0pt;
- }
+}
 
- .reservation h2 span {
+.reservation h2 span {
     width: 70%;
     text-align: center;
     margin: 0 auto;
@@ -226,15 +242,15 @@ body {
     font-variant: small-caps;
     letter-spacing: .4pt;
     word-spacing: .3pt;
- }
+}
 
- .reservation p {
+.reservation p {
     color: #13161B;
     width: 50%;
     margin: 0 auto;
- }
+}
 
- .reservation form {
+.reservation form {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -247,9 +263,9 @@ body {
     background: rbg(227, 222, 222);
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
- }
+}
 
- .reservation input[type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -262,28 +278,29 @@ body {
     background: #13161B;
     box-shadow: inset 0px 3px 0px 0px fbga(5, 5, 5, 0.15);
     font-family: 'Raleway', sans-serif;
- }
+}
 
- .reservation input[type="text"]:hover {
+.reservation input[type="text"]:hover {
     box-shadow: 0 0 18px rgba(100, 65, 0, .8);
- }
- /*Photo Overlay Transitions*/
- .photo-overlay {
+}
+
+/*Photo Overlay Transitions*/
+.photo-overlay {
     opacity: 0;
     transition: opacity .5s;
     border-radius: 10px;
     cursor: pointer;
- }
+}
 
- .photo-overlay:hover {
+.photo-overlay:hover {
     opacity: 1;
- }
+}
 
- .photo img {
+.photo img {
     transition: transform .5s;
     transform-origin: 50% 50%;
- }
+}
 
- .photo:hover img {
+.photo:hover img {
     transform: scale(1.1);
- }
+}
