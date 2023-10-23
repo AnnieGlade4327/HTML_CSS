@@ -79,3 +79,42 @@
     color: #C9BDAA;
     margin-top: 5%;
 }
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+.terms {
+    margin: 30px 1px 0 0;
+    margin-top: 13%;
+    padding-left
+}
+
+.terms:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: ;
+    cursor: ;
+    border: ;
+    font-weight: ;
+    outline: ;
+    text-align: ;
+    font-family: ;
+    margin: ;
+    padding: ;
+    width: ;
+    font-size: ;
+    transition: ;
+    border-radius: ;
+    background-color: ;
+    box-shadow: ;
+}
+
+.submit input [type="submit"]:hover {
+    color: ;
+    background-color: ;
+    box-shadow: ;
+}
