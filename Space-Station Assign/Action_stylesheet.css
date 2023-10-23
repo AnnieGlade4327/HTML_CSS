@@ -88,15 +88,15 @@
     margin: 30px 1px 0 0;
     margin-top: 13%;
     padding-left: 52px;
-    font-size: ;
-    line-height: ;
-    color: ;
-    cursor: ;
-    font-family: ;
-    font-weight: ;
-    position: ;
-    display: ;
-    float: ;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
 }
 
 .terms:hover {
