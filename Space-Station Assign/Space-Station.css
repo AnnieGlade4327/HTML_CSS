@@ -313,3 +313,27 @@ section {
 
 /*Media Queries*/
 
+@media all and (max-width: 640px) and (min-width: 381px) {
+    .head-main {
+        font-size: 28px;    
+    }
+}
+
+@media all and (max-width: 381px) and (min-width: 200px) {
+    .head-main {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
